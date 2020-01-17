@@ -1,0 +1,23 @@
+[
+  {
+    "reviewImage": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "reviewDate": "26th Nov, 2019",
+    "reviewComment": "Wow such a great movie, it meets my expectation",
+    "rating": 8.9,
+    "reviewName": "Aisha Daura"
+  },
+  {
+    "reviewImage": "https://images.pexels.com/photos/761115/pexels-photo-761115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "reviewDate": "30th Aug, 2019",
+    "reviewComment": "Martin Scorsese's The Irishman is a magisterial mob epic...this movie is reflective,more about greatness and loss..Scorsese has brought back the lost charm of gangster movies with this masterpiece after so many years..but don't expect that this movie is executed with the same manner of Goodfellas.",
+    "rating": 7.5,
+    "reviewName": "Khalid Waleed"
+  },
+  {
+    "reviewImage": "https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "reviewDate": "10th Sept, 2019",
+    "reviewComment": "I didn’t want to like it. Gangster is so overdone. Was expecting another dreary ‘tough guys’ gangster film. This film totally won me over. Not only did I like it, I loved it. For me, this is the film that most exhibits Scorsese’s genius, ",
+    "rating": 8.5,
+    "reviewName": "John Doe"
+  }
+]
