@@ -1,16 +1,13 @@
 # movie_app
 
-A new Flutter application.
+This is a prototype of a movie streaming application built with Flutter, that allows users stay upto date with movies and series. Users can also view trailers of new movies and view reviews of other users 
 
-## Getting Started
+<img src="images/Screenshot_20200605-210000.jpg" height="600" width="300"/> \ <img src="images/Screenshot_20200605-210227.jpg" height="600" width="300"/> <br>
 
-This project is a starting point for a Flutter application.
+<img src="images/Screenshot_20200605-210234.jpg" height="600" width="300"/> \ <img src="images/Screenshot_20200605-210044.jpg" height="600" width="300"/> <br>
 
-A few resources to get you started if this is your first Flutter project:
+<img src="images/Screenshot_20200605-210130.jpg" height="600" width="300"/> \ <img src="images/Screenshot_20200605-210511.jpg" height="600" width="300"/> <br>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<img src="images/Screenshot_20200605-210530.jpg" height="600" width="300"/> \ <img src="images/Screenshot_20200605-210155.jpg" height="600" width="300"/> <br>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="images/Screenshot_20200605-210211.jpg" height="600" width="300"/> 
