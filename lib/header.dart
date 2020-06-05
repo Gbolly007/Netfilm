@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/constants.dart';
+import 'package:movie_app/login.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'userAccount.dart';
 
 class cardInput extends StatelessWidget {
@@ -51,12 +53,16 @@ class rowHeader extends StatelessWidget {
           width: 130.0,
         ),
         InkWell(
-          onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => UserAccount()));
+          onTap: () async {
+            Navigator.of(context).pushAndRemoveUntil(
+                MaterialPageRoute(builder: (context) => LoginPage()),
+                (Route<dynamic> route) => false);
+            SharedPreferences prefs = await SharedPreferences.getInstance();
+            await prefs.setString('API Key', "");
           },
-          child: CircleAvatar(
-            backgroundImage: NetworkImage(kprofileImage),
+          child: Icon(
+            Icons.exit_to_app,
+            color: Colors.white,
           ),
         )
       ],

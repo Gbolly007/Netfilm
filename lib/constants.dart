@@ -3,6 +3,7 @@ import 'package:movie_app/constants.dart';
 
 const kGeneralColor = Color(0xFF1C2765);
 const kSemiGeneralColor = Color(0xFFF14E24);
+Color darkGreyColor = new Color(0xFF212128);
 const kTintColor = Color(0xFFFC944B);
 const kprofileImage =
     "https://images.pexels.com/photos/1438275/pexels-photo-1438275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
@@ -52,6 +53,27 @@ const kMovieDetailInfoStyle = TextStyle(
     fontWeight: FontWeight.bold,
     fontFamily: "VarelaRound");
 
-const kMoviesUrl = "https://api.myjson.com/bins/9iho6";
+InputDecoration textInputDecoration = InputDecoration(
+    hintText: "Username",
+    filled: true,
+    fillColor: Colors.white,
+    contentPadding: const EdgeInsets.only(left: 14.0, bottom: 8.0, top: 8.0),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white),
+      borderRadius: BorderRadius.circular(25.7),
+    ),
+    enabledBorder: UnderlineInputBorder(
+      borderSide: BorderSide(color: Colors.white),
+      borderRadius: BorderRadius.circular(25.7),
+    ));
+
+BoxDecoration bcdcor = BoxDecoration(boxShadow: [
+  new BoxShadow(
+    color: Colors.black45,
+    blurRadius: 25.0, // You can set this blurRadius as per your requirement
+  ),
+]);
+
+const kMoviesUrl = "https://api.jsonbin.io/b/5ed5ad6b60775a56858675df/2";
 const kSeriesUrl = "https://api.myjson.com/bins/hzxko";
-const kUpcomingUrl = "https://api.myjson.com/bins/ruiuo";
+const kUpcomingUrl = "https://api.jsonbin.io/b/5ed596c160775a5685866aaa";

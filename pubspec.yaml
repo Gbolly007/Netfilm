@@ -30,6 +30,12 @@ dependencies:
   flutter_rating_bar: ^3.0.0
   youtube_player_flutter: ^6.0.3+2
   fancy_bottom_navigation: ^0.3.2
+  animations: ^1.0.0+5
+  uuid: ^2.0.4
+  flutter_flexible_toast: ^0.1.4
+  flushbar: ^1.10.4
+  awesome_dialog: ^1.1.0
+  shared_preferences: ^0.5.4+8
 
 dev_dependencies:
   flutter_test:

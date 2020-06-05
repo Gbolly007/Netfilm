@@ -136,8 +136,7 @@ class _SeriesPageState extends State<SeriesPage> {
                                         context,
                                         new MaterialPageRoute(
                                             builder: (context) => SeriesDetail(
-                                                  curSeries: _searchResult[i],
-                                                )));
+                                                curSeries: _searchResult[i])));
                                   },
                                   child: Padding(
                                     padding: const EdgeInsets.all(2.0),

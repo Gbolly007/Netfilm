@@ -22,23 +22,23 @@ class _TrendingPageState extends State<TrendingPage> {
   Widget build(BuildContext context) {
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
-    final AsyncMemoizer<List<Movie>> memoizer = AsyncMemoizer();
-    Future<List<Movie>> _getFood() {
-      return memoizer.runOnce(() async {
-        var data = await http.get(kMoviesUrl);
-
-        var jsonData = json.decode(data.body);
-        List<Movie> movies = [];
-
-        for (var m in jsonData) {
-          Movie movie = Movie(m["movieImage"], m["movieName"], m["synopsis"],
-              m["movieDuration"], m["movieCast"], m["rating"], m["movieGenre"]);
-
-          movies.add(movie);
-        }
-        print(movies.length);
-        return movies;
+    Future<List<Movie>> _getFood() async {
+      var data = await http.get(kMoviesUrl, headers: {
+        'secret-key':
+            "\$2b\$10\$etlAaLDuvt31fYOKoKb/5eDe18X04y7LrCa5KrhILdFOvgxbPb4CW"
       });
+
+      var jsonData = json.decode(data.body);
+      List<Movie> movies = [];
+
+      for (var m in jsonData) {
+        Movie movie = Movie(m["movieImage"], m["movieName"], m["synopsis"],
+            m["movieDuration"], m["movieCast"], m["rating"], m["movieGenre"]);
+
+        movies.add(movie);
+      }
+      print(movies.length);
+      return movies;
     }
 
     return Scaffold(
@@ -307,7 +307,10 @@ class BannerWidgetArea extends StatelessWidget {
     );
 
     Future<List<TopMovie>> _getTopMovie() async {
-      var data = await http.get(kUpcomingUrl);
+      var data = await http.get(kUpcomingUrl, headers: {
+        'secret-key':
+            "\$2b\$10\$etlAaLDuvt31fYOKoKb/5eDe18X04y7LrCa5KrhILdFOvgxbPb4CW"
+      });
 
       var jsonData = json.decode(data.body);
       List<TopMovie> topMovies = [];
